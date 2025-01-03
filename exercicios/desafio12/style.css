@@ -41,18 +41,20 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 header p{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 section{
     padding:10vh 0vh;
     line-height: 2em;
     padding-left: 30px;
     font-size: 3.5vh;
+    
 }
 section#normal{
     font-family: var(--fonte3);
     padding: 5vh 5vh 5vh 2vh;
     background-color: white;
+    font-size: 5.5vw;
 }
 section#imagem1{
     position: relative;
