@@ -44,60 +44,37 @@ header p{
     padding-bottom: 50px;
 }
 section{
-    padding:10vh 0vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 3.5vh;
-    
-}
-section#normal{
+    font-size: 3.5vw;
     font-family: var(--fonte3);
-    padding: 5vh 5vh 5vh 2vh;
+}
+section.normal{
     background-color: white;
-    font-size: 5.5vw;
+    color: black;
 }
-section#imagem1{
-    position: relative;
+section.imagem{
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
+}
+section.imagem p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.76);
+}
+section.imagem#img1{
     background-image: url(Imagens/background001.jpg);
-    background-position: top center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 50vh;
 }
-section#imagem1 aside{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    font-family: var(--fonte3);
-    padding: 5vh 5vh 5vh 2vh;
-    background-color: rgba(0, 0, 0, 0.384);
-    margin-left: 20px;
-    border-radius: 10px;
-    color: white;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.534);
-}
-section#imagem2{
-    position: relative;
+section.imagem#img2{
     background-image: url(Imagens/background002.jpg);
-    background-position: top center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 50vh;
-    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.541);
-}
-section#imagem2 aside{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    font-family: var(--fonte3);
-    padding: 5vh 5vh 5vh 2vh;
-    background-color: rgba(0, 0, 0, 0.384);
-    margin-left: 20px;
-    border-radius: 10px;
-    color: white;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.534);
 }
 footer{
     background-color: black;
