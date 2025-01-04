@@ -1,0 +1,22 @@
+@charset "UFT-8";
+
+body{
+    background-image: url(imagens/wallpaper001.jpg);
+}
+.quadrado{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+}
+.quadrado#q1{
+    background-color: skyblue;
+}
+.quadrado#q2{
+    background-image: linear-gradient(to bottom ,yellow ,red);
+}
+.quadrado#q3{
+    background-image: url(imagens/pattern003.png);
+}
