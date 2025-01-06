@@ -22,12 +22,26 @@
             padding: 8px;
             text-align: center;
         }
+        col.cNome{
+            background-color: aqua;
+        }
+        col.cGrupo{
+            background-color: lightcoral;
+        }
+        col.cProf{
+            background-color: bisque;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     
     <table>
+        <colgroup>
+            <col class="cNome">
+            <col class="cGrupo" span="2">
+            <col class="cProf">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
