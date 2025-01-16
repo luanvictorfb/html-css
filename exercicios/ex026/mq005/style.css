@@ -21,19 +21,16 @@ header h1{
     color: white;
     text-shadow: 5px 5px 10px black;
 }
-span{
+span#menu{
     display: block;
     margin: auto;
-    text-align: center;
     background-color: rgb(77, 76, 76);
-    width: 97.8vw;
+    text-align: center;
+    padding: 5px;
     color: white;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 1000px;
 }
-span:hover{
-    background-color: grey;
+span#menu:hover{
+    background-color: rgb(102, 102, 102);
     color: rgb(77, 76, 76);
 }
 nav{
@@ -74,4 +71,27 @@ main article p{
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+}
+
+@media screen and (min-width: 601px) {
+    span#menu{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+        width: 10vw;
+    }
+    
+    main article{
+        width: 601px;
+    }
+
+
+
+
 }
