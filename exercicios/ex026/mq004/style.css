@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html ,body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color: black;
+    background-image: url(imagens/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 12px 12px 18px rgba(0, 0, 0, 0.849);
+    font-size: 2em;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.658);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+
+img#telefone{ display: block;}
+img#tablet{ display: none;}
+img#print{ display: none;}
+img#pc{ display: none;}
+img#tv{ display: none;}
+
+/*
+Typical Device Breakpoints
+------------------------------
+Celular Portrato: 320–480 pixels
+Celular Paisagem: 480 pixels
+Tablet Portrato: 601–768 pixels
+Tablet Paisagem: 1024 pixels
+Small Desktop and laptop : 1025–1280 pixels
+Large Desktop and Tv: 1281–1440 pixels
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(imagens/back-print.jpg);
+    }
+    h1{
+        text-shadow: none;
+    }
+    main{
+        border: 2px solid black;
+    }
+
+    img#telefone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: block;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    body {
+        background-image: url(imagens/back-tablet.jpg);
+    }
+    
+    main{
+        width: 80vw;
+    }
+    
+    img#telefone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-image: url(imagens/back-pc.jpg);
+    }
+    main{
+        width: 70vw;
+    }
+    
+    img#telefone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+}
+@media screen and (min-width: 1281px){
+    body {
+        background-image: url(imagens/back-tv.jpg);
+    }
+    main{
+        width: 70vw;
+    }
+    
+    img#telefone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: block;}
+}
