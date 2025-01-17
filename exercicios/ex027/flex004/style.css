@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.container{
+    background-color: #161616;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    border-radius: 6px;
+    height: 200px;
+}
+.item{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    width: 10%;
+    height: 50%;
+}
