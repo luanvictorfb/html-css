@@ -7,5 +7,6 @@
 .item{
     background-color: aqua;
     flex: auto;
+ 
     text-align: center;
 }
