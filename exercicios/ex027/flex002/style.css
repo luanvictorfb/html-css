@@ -3,12 +3,12 @@
 .container{
     background-color: salmon;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
 }
 .item{
     background-color: aqua;
-    flex: auto;
- 
     text-align: center;
     border: 1px solid black;
+    padding: 10px;
+    
 }

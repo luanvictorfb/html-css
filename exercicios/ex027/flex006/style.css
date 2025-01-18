@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
 .container{
     background-color: salmon;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-content:space-around;
+    height: 50vh;
 }
 .item{
     background-color: aqua;
-    flex: auto;
- 
     text-align: center;
     border: 1px solid black;
+    padding: 40px;
 }
