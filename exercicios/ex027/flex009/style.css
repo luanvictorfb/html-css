@@ -3,11 +3,11 @@
 .container{
     background-color: salmon;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 .item{
     background-color: aqua;
-    flex: auto;
     text-align: center;
     border: 1px solid black;
+    flex-basis: 150px;
 }
